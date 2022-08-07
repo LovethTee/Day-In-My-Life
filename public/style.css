@@ -1,0 +1,142 @@
+*{
+margin : 0;
+padding: 0;
+box-sizing : border-box;
+}
+
+body{
+    background: rgb(9, 51, 56);
+    font-family:'Cinzel', serif;
+}
+.todo-container{
+    color:rgb(170, 72, 105);
+    position: absolute;
+    /*no matter how the window is resized, it will still remain in the middle.*/
+    top: 50%;
+    left:50%;
+    width: 600px;
+    /*static unit for use on a pc, avoiding responsivity*/
+   padding:20px; /* makes the interior smaller but does not affect the size of the box*/
+   transform: translate(-50%, -50%);
+   background: rgba(30, 4, 32, 0.05);
+   border-radius: 20px;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+
+
+}
+.todo{
+    width:800px;
+
+}
+h2{
+    padding:10px;
+    font-size:2rem;
+
+}
+input{
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 2px;
+    padding:5px;
+    border-radius: 5px;
+    height:20px;
+    width:100%;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+textarea{
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    /* the item gets forced into a new line */
+    width:100%;
+    /* makes it wider within its parent container */
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(157, 177, 214);
+}
+.todo-header button{
+    color:rgb(211, 156, 17);
+    border:none;
+    cursor:pointer;
+    /* visual pointer to the user letting them know the button is clickable */
+    margin:5px;
+    padding: 5px;
+    background-color: rgb(24, 63, 134);
+    font-family:'Cinzel', serif;
+    
+} 
+ul{
+    list-style: none;
+
+}
+p{
+    font-family:'Ubuntu', sans-serif;
+    color: rgb(230, 159, 134);
+    margin-bottom: 10px;
+
+}
+.todo-list-item{
+    padding:10px;
+    margin-top: 10px;
+    border:none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row; /* when the tasks hits the edges it flexes down to a new row */
+
+
+}
+.todo-list-item-content{
+    font-size: .8rem;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+.todo-list-item form{
+    width:100%;
+    display:flex;
+}
+.todo-list-item input{
+   
+    margin-right:10px;
+    border-radius:5px;
+}
+.todo-list-item .confirm{
+    color:rgb(221, 194, 41);
+    text-decoration: none;
+    border:none;
+    cursor:pointer;
+    padding:5px;
+    border-radius: 5px;
+    background-color: rgb(190, 82, 82);
+    max-height: 30px ;
+    font-family: 'Cinzel', serif;
+    display:block;
+}
+.todo-list-item .cancel{
+    color:rgb(214, 48, 48);
+    text-decoration: none;
+    border:none;
+    cursor:pointer;
+    padding:5px;
+    border-radius: 5px;
+    background-color: rgb(112, 9, 9);
+    max-height: 30px ;
+    font-family: 'Cinzel', serif;
+    display:block;
+}
+.todo-list-item div{
+    flex-grow: 2;
+}
+.todo-list-item .edit{
+    color: gainsboro;
+    margin-right:10px;
+    cursor:pointer;
+
+}
+.todo-list-item .remove{
+    color:chocolate;
+    margin-right:5px;
+    cursor:pointer;
+}

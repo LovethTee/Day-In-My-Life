@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/style.css">   
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Dancing+Script&family=Dosis:wght@300&family=Roboto+Condensed:ital,wght@1,300&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!--ICONS-->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="todo-container">
+        <h2>To Do List</h2>
+        <p>A Day In My Life</p>
+        <section class = "todo">
+            <form action ="/"method ="POST" class ="todo-header">
+                <input type ="text" name ="title" value ='Time-frame'>
+                <textarea rows="6" cols="45" name ="content" >Task</textarea>
+                <!--textarea is used to make the box for content resizable and not fixed-->
+                <!--button should be inside the form-->
+                <button type ="submit"><span class="fas 
+                fa-plus"></span> Add Text</button>
+            </form>
+            <ul class="todo-list">
+                <% todoTasks.forEach(data=> { %>
+                        <li class="todo-list-item">
+                            <div class="todo-list-item-title">
+                                <%=data.title%>
+
+                            </div>
+                            <div class="todo-list-item-content">
+                                <%= data.content %>
+                            </div>
+                            <a href="/edit/<%=data._id %>"
+                                class="edit"><span class="fas fa-edit"></span></a>
+                            <a href="/remove/<%=data._id %>"
+                                    class="remove"><span class="fas fa-times"></span></a>
+                                
+                        </li>
+               <% }) %>
+               
+            </ul>
+        </section>
+    </section>
+    
+</body>
