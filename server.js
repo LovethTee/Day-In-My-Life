@@ -68,10 +68,11 @@ app
             res.render("edit.ejs", {
                 todoTasks:task, idTask: id 
             });
-        })
-        //edit button currently not working :(
+        });
+    })
+        
     .post((req, res) => {
-        const id = req.params.id
+        const id = req.params.id;
         TodoTask.findByIdAndUpdate(
             id,
             {
@@ -86,7 +87,7 @@ app
             
         )
     });
-    });
+    
     //DELETE
 app
     .route('/remove/:id')
