@@ -7,6 +7,7 @@ box-sizing : border-box;
 body{
     background: rgb(9, 51, 56);
     font-family:'Cinzel', serif;
+    font-size:0.8rem;
 }
 .todo-container{
     color:rgb(170, 72, 105);
@@ -14,7 +15,7 @@ body{
     /*no matter how the window is resized, it will still remain in the middle.*/
     top: 50%;
     left:50%;
-    width: 600px;
+    width: 500px;
     /*static unit for use on a pc, avoiding responsivity*/
    padding:20px; /* makes the interior smaller but does not affect the size of the box*/
    transform: translate(-50%, -50%);
@@ -27,12 +28,12 @@ body{
 
 }
 .todo{
-    width:800px;
+    width:600px;
 
 }
 h2{
     padding:10px;
-    font-size:2rem;
+    font-size:1.5rem;
 
 }
 input{
@@ -50,6 +51,7 @@ textarea{
     display: block;
     /* the item gets forced into a new line */
     width:100%;
+    height:40px;
     /* makes it wider within its parent container */
     border-radius: 5px;
     padding: 5px;

@@ -23,7 +23,7 @@
                 <% todoTasks.forEach(data=> { %>
                     <%if(data._id==idTask) { %>
                         <li class="todo-list-item">
-                            <form action ='/edit/<%= data._id%>' method ="POST">
+                            <form action ="/edit/<%= data._id%>" method ="POST">
                                 <input type ="text" value ='<%= data.title %>' name ='title'>
                                 <textarea rows="6" cols="45" name ="content" ><%= data.content %></textarea>
                                 <button type="submit" class='confirm'>Confirm</button>
