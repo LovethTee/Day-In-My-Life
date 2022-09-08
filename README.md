@@ -6,7 +6,7 @@
 
 <h3>Screenshot & GIF:</h3>
 
-![Alt Text](https://user-images.githubusercontent.com/102753233/189001859-bf8f9705-4970-486e-b1ed-19dec3cfbba2.png)
+![Alt Text](https://user-images.githubusercontent.com/102753233/189007523-ae130125-e6cb-4048-810c-0970decb6193.png)
 
 <a href="LINK_TO_REPO">
   <img src="https://media.giphy.com/media/w0QgxWYu0jxcJKPwaS/giphy.gif" alt="Gif" width="300" height="300">
